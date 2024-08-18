@@ -1,0 +1,250 @@
+/* General body and page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation link styling for login and register buttons */
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #5C67F2; /* Default color for both buttons */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 0 10px; /* Spacing between buttons */
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* Different background for the register button */
+nav a.register {
+    background-color: #FF5733; /* Distinct color for register button */
+}
+
+nav a:hover, nav a:focus {
+    background-color: #4a54f1; /* Hover effect for login button */
+    outline: none;
+}
+
+nav a.register:hover, nav a.register:focus {
+    background-color: #E04C2B; /* Hover effect for register button */
+}
+
+/* Styling for forms used for login and registration */
+form {
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Specific styles for the register form */
+form.register-form {
+    border: 2px solid #FF5733; /* Distinct border for the register form */
+}
+
+/* Form heading styling */
+form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Button styling for login and register forms */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5C67F2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4a54f1;
+}
+
+/* Grid container for movies */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Individual movie cards styling */
+.movie-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.movie-poster {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #ddd; /* subtle separation from content */
+}
+
+.movie-info {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie-overview {
+    padding: 10px;
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #555;
+}
+
+.rating {
+    display: inline-block;
+    padding: 3px 7px;
+    background-color: gold;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.star {
+    color: gold;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 480px) {
+    form {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
+/* Grid container for movies */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual movie cards styling */
+.movie-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Movie poster styling */
+.movie-poster {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd; /* Subtle separation from content */
+}
+
+/* Movie info section */
+.movie-info {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Movie title styling */
+.movie-info h3 {
+    margin: 0;
+    font-size: 18px;
+    flex: 1;
+    text-align: left;
+}
+
+/* Movie rating styling */
+.movie-info .rating {
+    background-color: gold;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Movie overview */
+.movie-overview {
+    padding: 10px;
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #555;
+    text-align: left;
+}
+
+/* Button styling for movie actions */
+.movie-card button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #5C67F2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.movie-card button:hover {
+    background-color: #4a54f1;
+}
